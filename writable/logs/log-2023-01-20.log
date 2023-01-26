@@ -1,0 +1,209 @@
+CRITICAL - 2023-01-20 20:37:45 --> Invalid file: view_berkas.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('view_berkas.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('view_berkas', [], true)
+ 3 APPPATH\Controllers\Berkas.php(14): view('view_berkas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Berkas->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berkas))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-20 20:38:39 --> Invalid file: view_berkas.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('view_berkas.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('view_berkas', [], true)
+ 3 APPPATH\Controllers\Berkas.php(14): view('view_berkas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Berkas->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Berkas))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-20 21:11:32 --> Undefined variable $validation
+in APPPATH\Views\product\new.php on line 44.
+ 1 APPPATH\Views\product\new.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\product\\new.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\product\\new.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('product/new', [], true)
+ 5 APPPATH\Controllers\Product.php(65): view('product/new')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Product->create()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-20 21:14:10 --> Undefined variable $validation
+in APPPATH\Views\product\new.php on line 45.
+ 1 APPPATH\Views\product\new.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\product\\new.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\product\\new.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('product/new', [], true)
+ 5 APPPATH\Controllers\Product.php(65): view('product/new')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Product->create()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-20 21:20:44 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`toko_online`.`komentar`, CONSTRAINT `komentar_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) in C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `ba...', 0)
+#1 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ba...')
+#2 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ba...')
+#3 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ba...', Array, false)
+#4 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Model.php(425): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\BaseModel.php(985): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\toko1\app\Controllers\Product.php(103): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\Product->delete('1')
+#8 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#9 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\toko1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-01-20 21:20:44 --> Cannot delete or update a parent row: a foreign key constraint fails (`toko_online`.`komentar`, CONSTRAINT `komentar_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `barang`
+WHERE `id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `barang`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `barang`
+WHERE `id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `barang`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(425): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(985): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Product.php(103): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Product->delete('1')
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-20 21:21:24 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`toko_online`.`komentar`, CONSTRAINT `komentar_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) in C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `ba...', 0)
+#1 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ba...')
+#2 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ba...')
+#3 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ba...', Array, false)
+#4 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Model.php(425): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\BaseModel.php(985): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\toko1\app\Controllers\Product.php(103): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\Product->delete('1')
+#8 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#9 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\toko1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-01-20 21:21:24 --> Cannot delete or update a parent row: a foreign key constraint fails (`toko_online`.`komentar`, CONSTRAINT `komentar_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `barang`
+WHERE `id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `barang`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `barang`
+WHERE `id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `barang`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(425): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(985): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Product.php(103): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Product->delete('1')
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-20 21:21:29 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`toko_online`.`komentar`, CONSTRAINT `komentar_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) in C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `ba...', 0)
+#1 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ba...')
+#2 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ba...')
+#3 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ba...', Array, false)
+#4 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Model.php(425): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\BaseModel.php(985): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\toko1\app\Controllers\Product.php(103): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\Product->delete('1')
+#8 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#9 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\toko1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-01-20 21:21:29 --> Cannot delete or update a parent row: a foreign key constraint fails (`toko_online`.`komentar`, CONSTRAINT `komentar_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `barang`
+WHERE `id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `barang`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `barang`
+WHERE `id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `barang`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(425): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(985): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Product.php(103): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Product->delete('1')
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-20 21:22:16 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`toko_online`.`komentar`, CONSTRAINT `komentar_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) in C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `ba...', 0)
+#1 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ba...')
+#2 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ba...')
+#3 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ba...', Array, false)
+#4 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Model.php(425): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\BaseModel.php(985): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\toko1\app\Controllers\Product.php(103): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\Product->delete('1')
+#8 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#9 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\toko1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-01-20 21:22:16 --> Cannot delete or update a parent row: a foreign key constraint fails (`toko_online`.`komentar`, CONSTRAINT `komentar_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `barang`
+WHERE `id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `barang`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `barang`
+WHERE `id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `barang`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(425): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(985): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Product.php(103): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Product->delete('1')
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-20 21:22:21 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`toko_online`.`komentar`, CONSTRAINT `komentar_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE) in C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `ba...', 0)
+#1 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ba...')
+#2 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ba...')
+#3 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ba...', Array, false)
+#4 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Model.php(425): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\BaseModel.php(985): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\toko1\app\Controllers\Product.php(103): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\Product->delete('1')
+#8 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#9 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\toko1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\toko1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-01-20 21:22:21 --> Cannot delete or update a parent row: a foreign key constraint fails (`toko_online`.`komentar`, CONSTRAINT `komentar_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `barang`
+WHERE `id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `barang`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `barang`
+WHERE `id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `barang`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(425): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(985): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\Product.php(103): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Product->delete('1')
+ 9 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+10 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

@@ -1,0 +1,37 @@
+CRITICAL - 2022-12-26 04:21:03 --> 35 : OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to api.rajaongkir.com:443 
+in SYSTEMPATH\HTTP\CURLRequest.php on line 660.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(660): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('35', 'OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to api.rajaongkir.com:443 ')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(368): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://api.rajaongkir.com/starter/city?province=8')
+ 4 APPPATH\Libraries\Bantuan.php(13): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://api.rajaongkir.com/starter/city?province=8', [...])
+ 5 APPPATH\Controllers\Shop.php(69): App\Libraries\Bantuan->rajaongkir('https://api.rajaongkir.com/starter/city?province=8', 'eab7c40605109f565c0116b481679d0f', null, 'GET')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Shop->getCity()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 04:27:56 --> 7 : Failed to connect to api.rajaongkir.com port 443: Host unreachable
+in SYSTEMPATH\HTTP\CURLRequest.php on line 660.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(660): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('7', 'Failed to connect to api.rajaongkir.com port 443: Host unreachable')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(368): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(136): CodeIgniter\HTTP\CURLRequest->send('GET', 'https://api.rajaongkir.com/starter/province')
+ 4 APPPATH\Libraries\Bantuan.php(13): CodeIgniter\HTTP\CURLRequest->request('GET', 'https://api.rajaongkir.com/starter/province', [...])
+ 5 APPPATH\Controllers\Shop.php(54): App\Libraries\Bantuan->rajaongkir('https://api.rajaongkir.com/starter/province', 'eab7c40605109f565c0116b481679d0f', null, 'GET')
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Shop->product('1')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Shop))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 04:31:52 --> Invalid file: transaksi/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('transaksi/index.php')
+ 2 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 3 APPPATH\Controllers\Transaksi.php(28): view('transaksi/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Transaksi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 04:37:30 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\HTTP\CURLRequest.php on line 657.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-26 04:38:03 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\HTTP\CURLRequest.php on line 657.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
